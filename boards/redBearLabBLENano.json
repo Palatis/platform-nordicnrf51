@@ -1,15 +1,19 @@
 {
   "build": {
-    "cpu": "cortex-m0", 
-    "f_cpu": "16000000L", 
-    "mcu": "nrf51822"
-  }, 
+	"core": "arduino",
+    "cpu": "cortex-m0",
+    "f_cpu": "16000000L",
+	"ldscript": "RBL_nRF51822.ld",
+    "mcu": "nrf51822",
+	"variant": "BLE_Nano"
+  },
   "frameworks": [
-    "mbed"
-  ], 
-  "name": "RedBearLab BLE Nano", 
+    "mbed",
+	"arduino-redbearlab"
+  ],
+  "name": "RedBearLab BLE Nano",
   "upload": {
-    "maximum_ram_size": 32768, 
+    "maximum_ram_size": 32768,
     "maximum_size": 262144
   }, 
   "url": "https://developer.mbed.org/platforms/RedBearLab-BLE-Nano/", 

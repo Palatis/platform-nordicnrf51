@@ -19,6 +19,10 @@
     "http://dl.platformio.org/packages/manifest.json"
   ],
   "frameworks": {
+    "arduino-redbearlab": {
+	  "package": "framework-arduinonordicnrf51-redbearlab",
+	  "script": "builder/frameworks/ardiuno-redbearlab.py"
+	},
     "arduino-rfduino": {
       "package": "framework-arduinonordicnrf51-rfduino",
       "script": "builder/frameworks/arduino-rfduino.py"
@@ -32,6 +36,11 @@
     "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
       "version": ">=1.40803.0,<1.40805.0"
+    },
+	"framework-arduinonordicnrf51-redbearlab": {
+	  "type": "framework",
+	  "optional": true,
+	  "version": "~0.0.1"
     },
     "framework-arduinonordicnrf51-rfduino": {
       "type": "framework",
