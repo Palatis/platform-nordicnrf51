@@ -19,9 +19,9 @@
     "http://dl.platformio.org/packages/manifest.json"
   ],
   "frameworks": {
-    "arduino": {
-      "package": "framework-arduinonordicnrf51",
-      "script": "builder/frameworks/arduino.py"
+    "arduino-rfduino": {
+      "package": "framework-arduinonordicnrf51-rfduino",
+      "script": "builder/frameworks/arduino-rfduino.py"
     },
     "mbed": {
       "package": "framework-mbed",
@@ -33,7 +33,7 @@
       "type": "toolchain",
       "version": ">=1.40803.0,<1.40805.0"
     },
-    "framework-arduinonordicnrf51": {
+    "framework-arduinonordicnrf51-rfduino": {
       "type": "framework",
       "optional": true,
       "version": "~1.20302.0"

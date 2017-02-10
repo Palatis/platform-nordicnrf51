@@ -29,9 +29,9 @@ from SCons.Script import DefaultEnvironment
 env = DefaultEnvironment()
 platform = env.PioPlatform()
 
-FRAMEWORK_DIR = platform.get_package_dir("framework-arduinonordicnrf51")
+FRAMEWORK_DIR = platform.get_package_dir("framework-arduinonordicnrf51-rfduino")
 FRAMEWORK_VERSION = platform.get_package_version(
-    "framework-arduinonordicnrf51")
+    "framework-arduinonordicnrf51-rfduino")
 assert isdir(FRAMEWORK_DIR)
 
 env.Prepend(
